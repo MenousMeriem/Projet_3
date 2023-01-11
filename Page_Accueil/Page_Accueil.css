@@ -1,0 +1,356 @@
+ *,*::after,*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+*{
+    font-family: 'Italiana', serif;
+    font-family: 'Noto Serif', serif;
+}
+
+ /* Navbar 1 ---------------------------------------------------------------------------------------*/
+
+
+.Tabcontainer{
+  width: 100%;
+  height: 350px; 
+  
+} 
+
+
+.Tabcontainer .Buttoncontainer{
+  height: 15%;
+}
+
+.Tabcontainer .Buttoncontainer button {
+  
+  width: 10%;
+  height: 100%;
+  float: left;
+  outline: none;
+  border-radius: 5px;  
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: black;
+  background-color: #ffffff;
+}
+
+.Tabcontainer .Buttoncontainer button:first-of-type {
+  margin-left: 20px;
+}
+
+.Tabcontainer .Buttoncontainer button:hover{
+   background-color: #ffffff;
+}
+
+.Tabcontainer .Tabpanel {
+  height: 100%;
+  background-color: #ffffff;
+
+ 
+}
+
+/* Navbar 2 ----------------------------------------------------------------------------------------
+
+/* Style de la barre de navigation */
+.navbar {
+    width: 85%;
+    background-color: rgb(255, 255, 255);
+    overflow: auto; 
+    border-radius: 15px;
+    padding: 7px;
+    position: absolute;
+    left: 6%;
+    top: 15%;
+    box-shadow: 0px 0px 15px #006943;
+    
+  }
+ 
+  /* Les liens de la Navbar */
+  .navbar a {
+    float: right;
+    text-align: center;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    }
+  
+  /* Hover des liens */
+  .navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.219);
+    border-radius: 10px;    
+  }
+  
+  /* Le lien sélectionner sur la navbar */
+  .active {
+    background-color: #04AA6D;
+    border-radius: 10px; 
+  }
+  
+  /* Responsive dans moins de 500px*/
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+  /* Limage de la navbar */
+  .logo_con a{
+    padding: 0px 20px;
+    top: 8px;
+    left: 1px;
+    position: absolute; 
+}
+
+/* Barre de recherche  */
+.navbar input[type=text] {
+    position: absolute;
+    left: 22% ;
+    padding: 5px;
+    top: 25%;
+    border-radius: 5px; 
+    border: 2px solid #04AA6D;
+    width: 25%;
+    font-size: 15px;
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+    .navbar a, .navbar input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+
+    .navbar input[type=text] {
+      border: 1px solid #ccc;
+    }
+  }
+
+
+/* Slider */
+
+.mySlides {
+  position: relative;
+  top: 50%;
+  height: 110%;
+  width: 100%; 
+  background-image: url(images/Visa.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation:lol 20s infinite;
+  background-position: center;
+}
+.mySlides img{
+  width: 80%;
+  height: 100%;
+}
+
+@keyframes lol{
+    0% { background-image: url("images/1.jpg"); }
+
+    25% { background-image: url("images/3.jpg"); }
+  
+    50% { background-image: url(images/2.jpg); }
+
+    75% { background-image: url(images/1.jpg); }
+
+    100% { background-image: url(images/3.jpg); }
+  
+    
+  }
+
+  .Texte{
+   font-size: 25px;
+   text-align: center;
+   color: #FFFFFF;
+   padding-bottom: 50px;
+  }
+
+  .Carte_M{
+  width: 100%;
+  height: 100%;
+  display: flex ;
+  /*flex-wrap: nowrap; */
+  /* align-items: center;  */
+  /* justify-content: center; */
+
+  }
+
+.Cartes{
+  position: absolute;
+  top: 100%;
+  left: 10%;  
+}
+
+.Carte{
+  display: grid; 
+  grid-template-columns: 160px ;
+  grid-template-rows: 65px 60px 50px ;
+  border-radius: 18px;
+  font-size: 15px;
+  background-color: #FFFFFF;
+  box-shadow: 5px 0px 15px #006943;
+  text-align: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.Carte:hover{
+transform: scale(1.5) ;
+box-shadow: 5px 5px 15px #006943;
+}
+
+.Carte-image{
+  background-size: cover; 
+  padding: 18px;
+}
+
+.Carte-txt{
+  margin: 10px;
+}
+
+/* .Carte-txt .titre{
+  color: #006943;
+  margin-top: 10px;
+  font-size: 17px;
+} */
+
+
+.Carte-txt p{
+  margin-top: 5px;
+  color: #006943;
+  font-size: 14px; 
+}
+
+.Carte-txt h2{
+  font-size: 18px;
+  color: #000000; 
+}
+
+
+
+
+
+  /* Footer */
+
+  /* Le contenu du footer  */
+.container{
+    width: 100%;
+    background-color: #000000f5;
+
+    bottom: 0%; 
+}
+
+/* Liste */
+ul{
+    list-style: none;
+}
+
+/* Les colonnes  */
+.footer-col{
+    width: 25%;
+    margin: 10px ;
+}
+
+/* Image du Footer */
+.image-footer{
+    width: 25%;
+    padding: 60px ;  
+}
+
+/* Titre de chaque colone */
+.footer-col h4{
+    font-size: 18px;
+    color: blanchedalmond ;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-decoration: underline #04AA6D ;
+}
+
+/* L'espace entre les petits titres  */
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px ;
+}
+
+/* Liens des petits titres */
+.footer-col ul li a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #fffffff5;
+    padding-left: 20px;
+}
+
+/* Liens des Reseaux Sociaux  */
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #04AA6D;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+@media (max-width: 500px) {
+    .footer-col{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Ligne des "aide, Cookies..." */
+.row{
+    padding: 20px 0 15px;
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.row-a{
+    width: 25%;
+    padding: 0 2px;
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.row-a ul li a{
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+.row .row-a a:hover{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+.essai {
+  height: 700px;
+  background-color: #006943d8;
+}
+
+.essai_{
+  height: 700px;
+  background-color: #FFFFFF;
+}
+/* Footer */
